@@ -1,0 +1,5 @@
+interface:
+  display_name: "Sticker Peel Hero"
+  short_description: "Build a tactile scroll-peeling hero image"
+  brand_color: "#E65330"
+  default_prompt: "Use $sticker-peel-hero to apply the single-flap scroll peel effect to my hero image."

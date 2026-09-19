@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#e65330" />
+    <meta name="description" content="A reusable, scroll-driven WebGL sticker peel effect." />
+    <title>Peel Study — Scroll-driven sticker peel</title>
+  </head>
+  <body>
+    <main>
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-stage">
+        <nav class="nav" aria-label="Primary navigation">
+          <a class="wordmark" href="#top" aria-label="Peel Study home">PEEL<span>®</span></a>
+          <p>WebGL experiment<br />Issue 001</p>
+          <div class="nav-actions">
+            <a class="nav-link" href="#method">How it works</a>
+            <a class="skill-link" href="https://github.com/aditya1729566/Peeling-effect/blob/main/public/sticker-peel-hero/SKILL.md" target="_blank" rel="noreferrer">View SKILL.md <span aria-hidden="true">↗</span></a>
+          </div>
+        </nav>
+
+        <div class="title-lockup" aria-hidden="true">
+          <span>PEEL</span>
+          <span>STUDY</span>
+        </div>
+
+        <div class="hero-image" aria-label="Editorial portrait peeling away like a die-cut sticker">
+          <img src="/portrait-cutout.png" alt="Fashion portrait in a cobalt blue suit" />
+          <div class="loading" aria-live="polite">Loading study…</div>
+        </div>
+
+        <div class="hero-copy">
+          <p class="eyebrow">A tactile scroll experiment</p>
+          <h1 id="hero-title">Nothing here<br />is really flat.</h1>
+        </div>
+
+        <div class="scroll-cue" aria-hidden="true">
+          <span>Scroll to peel</span>
+          <svg viewBox="0 0 18 28" fill="none">
+            <path d="M9 1v24M2 18l7 8 7-8" />
+          </svg>
+        </div>
+
+        <div class="progress-rail" aria-hidden="true">
+          <span class="progress-fill"></span>
+          <small>00</small><small>100</small>
+        </div>
+        </div>
+      </section>
+
+      <section class="method" id="method" aria-labelledby="method-title">
+        <div class="method-topline">
+          <p>Behind the surface</p>
+          <p>Three.js / GLSL / GSAP</p>
+        </div>
+        <div class="method-grid">
+          <h2 id="method-title">A flat image,<br />taught to lift<br />like a sticker.</h2>
+          <div class="method-copy">
+          <p>The portrait is drawn as a die-cut texture on a transparent WebGL plane. A fragment shader lifts one corner and hinges the peeled material over the stuck surface as one continuous adhesive-backed sheet.</p>
+            <p>Scroll is the only control. Move back up and the sheet settles perfectly flat again.</p>
+            <a href="#top">Replay the peel <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <footer>
+          <p>Original demo / 2026</p>
+          <p>Built as a shader study</p>
+        </footer>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
